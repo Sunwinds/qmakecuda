@@ -61,13 +61,6 @@ QMAKE_EXTRA_COMPILERS += cuda
 INCLUDEPATH *= $$CUDA/include
 LIBS *= -L$$CUDA/lib -lcudart
 
-#------------------------------- PRF in PROJECT --------------------------------
-# 
-# Make the *.prf file pop-up in the project manager
-# @bug This does not work... report a QtCreator bug?
-#-------------------------------------------------------------------------------
-# OTHER_FILES += cuda.prf
-
 #--------------------------------- CUDA SOURCES --------------------------------
 # 
 # This function is to be used to add cuda sources as 

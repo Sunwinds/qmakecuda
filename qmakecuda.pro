@@ -6,12 +6,9 @@ CONFIG -= app_bundle
 TARGET = qmakecuda
 TEMPLATE = app 
 
-# Setup your CUDA
-load($$PWD/cuda.prf)
-OTHER_FILES+=cuda.prf
+# Setup your CUDA & sources
+include(cuda.prf)
+add_cuda_source(helloworld.cu)
  
 # Your C++ sources
 SOURCES += main.cpp 
-
-# Your CUDA sources
-add_cuda_source(helloworld.cu)
